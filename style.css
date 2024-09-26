@@ -7,8 +7,8 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* Espaço entre logo e nav */
-    align-items: flex-start; /* Alinha no topo */
+    justify-content: space-between;
+    align-items: flex-start; 
     background: linear-gradient(#070126, #0d033f);
     padding: 20px; 
     color: #F4F5F5;
@@ -19,15 +19,40 @@ header {
 }
 
 nav {
-    display: flex; /* Para alinhar os itens em linha */
-    margin-right: 20px; /* Espaço à direita */
-    padding-top: 50px; /* Ajuste para mover para baixo */
+    display: flex;
+    margin-right: 20px; 
+    padding-top: 50px; 
+}
+
+#contacts {
+    display: none; 
+    position: fixed; /* Altera para 'fixed' para centralizar em relação à tela */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 20;
+    background-color: rgba(18, 4, 44, 0.9);
+    padding:100px;
+    border-radius: 10px;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.show {
+    display: flex;
+}
+
+#icones img {
+    width: 100px;
+    margin: 0 10px;
+
 }
 
 nav h3 {
     display: inline;
     color: #F4F5F5;
-    margin-left: 20px; /* Espaçamento adequado */
+    margin-left: 20px; 
     cursor: pointer;
     transition: transform 0.3s ease;
 }
