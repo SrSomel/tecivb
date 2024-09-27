@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Espaço entre logo e nav */
-    align-items: flex-start; /* Alinha no topo */
+    justify-content: space-between; 
+    align-items: center; /* Alterado para center */
     background: linear-gradient(#070126, #0d033f);
     padding: 20px; 
     color: #F4F5F5;
@@ -19,22 +20,49 @@ header {
 }
 
 nav {
-    display: flex; /* Para alinhar os itens em linha */
-    margin-right: 20px; /* Espaço à direita */
-    padding-top: 50px; /* Ajuste para mover para baixo */
+    display: flex; 
+    margin-right: 20px; 
+    padding-top: 20px; /* Ajuste para melhor alinhamento */
 }
 
 nav h3 {
     display: inline;
     color: #F4F5F5;
-    margin-left: 20px; /* Espaçamento adequado */
+    margin-left: 20px; 
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 nav h3:hover {
     transform: scale(1.2);
+}
 
+main{
+    flex: 1;
+}
+
+#contatar {
+    text-align: center; 
+    padding: 40px 0; /* Adicionei espaçamento ao redor do contatar */
+}
+
+#icones-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; /* Adicionei um pouco de espaço acima */
+}
+
+.icone {
+    display: flex; 
+    align-items: center; /* Removi a barra extra */
+    color: #070126;
+}
+
+.icone img {
+    margin-right: 10px; 
+    width: 50px; 
+    height: auto; 
 }
 
 footer {
@@ -43,6 +71,9 @@ footer {
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0px;
+    width: 100%;
 }
 
 footer p {
